@@ -1,0 +1,30 @@
+<html>
+   <body>
+
+      <form name = "form" action = "{% url 'check' %}"
+         method = "POST" >{% csrf_token %}
+
+         <div style = "max-width:470px;">
+            <center>
+               <input type = "text" style = "margin-left:20%;"
+                  placeholder = "Enter the Wine ID" name = "WineID" />
+            </center>
+         </div>
+
+
+         <div style = "max-width:470px;">
+            <center>
+
+               <button style = "border:0px; background-color:#4285F4; margin-top:8%;
+                  height:40px; width:60%;margin-left:19%;" type = "submit"
+                  value = "Submit" >
+                  <strong>Submit</strong>
+               </button>
+
+            </center>
+         </div>
+
+      </form>
+
+   </body>
+</html>
